@@ -4,6 +4,9 @@
 int main(int argc, char* argv[])
 {
 	float userNumber = 0;
+
+	memset(table, 0, TABLE_SIZE);
+
 	puts("Enter a value:");
 	scanf("%f", &userNumber);
 
