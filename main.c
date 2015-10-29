@@ -4,10 +4,10 @@
 int main(int argc, char* argv[])
 {
 	float userNumber = 0;
-	cout << "Enter a value:" << endl;
-	cin >> userNumber;
+	puts("Enter a value:");
+	scanf("%f", &userNumber);
 
-	cout << factorial(userNumber) << endl;
+	printf("%f! = %f\n", userNumber, factorialF(userNumber));
 
 	return 0;
 }
