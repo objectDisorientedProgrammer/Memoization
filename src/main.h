@@ -4,4 +4,6 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "factorial.h"
+
 #endif
