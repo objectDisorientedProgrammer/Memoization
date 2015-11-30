@@ -6,11 +6,12 @@ OUTPATH=bin/
 all: main
 
 fct: ${INPATH}factorial.c
-	${CC} -c ${INPATH}factorial.c
-	mv factorial.o ${INPATH} 
+	${CC} ${CFLAGS} -c ${INPATH}factorial.c
+	mv factorial.o ${INPATH}
 	
 main: fct ${INPATH}main.c
-	${CC} ${INPATH}main.c ${INPATH}factorial.o -o ${OUTPATH}app
+	${CC} ${CFLAGS} ${INPATH}main.c ${INPATH}factorial.o -o ${OUTPATH}app
 
 clean:
 	rm ${OUTPATH}app ${INPATH}*.o
+
