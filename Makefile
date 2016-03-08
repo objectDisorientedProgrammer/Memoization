@@ -15,4 +15,5 @@ main: fct ${INPATH}main.c
 clean:
 	rm ${OUTPATH}app ${INPATH}*.o
 
-.PHONY: clean all
+.PHONY: clean
+.PHONY: all
