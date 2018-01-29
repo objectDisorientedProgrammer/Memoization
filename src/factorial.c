@@ -7,6 +7,9 @@
 
 #include "factorial.h"
 
+int tableInt[TABLE_SIZE];
+float table[TABLE_SIZE];
+
 int factorialInt(int num)
 {
     if(num == 0)
@@ -23,13 +26,13 @@ int factorialInt(int num)
 
 float factorialF(float num)
 {
-    if(num == 0)
-        return 1;
-    else if(num < TABLE_SIZE && table[(int)num] > 0)
+    if(num == 0.0f)
+        return 1.0f;
+    else if(num < TABLE_SIZE && table[(int)num] > 0.0f)
         return table[(int)num];
     else
     {
-        float value = factorialF(num - 1) * num;
+        float value = factorialF(num - 1.0f) * num;
         table[(int)num] = value;
         return value;
     }

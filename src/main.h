@@ -8,9 +8,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
-#include <string.h>
-
 #include "factorial.h"
+
+extern int tableInt[TABLE_SIZE];
+extern float table[TABLE_SIZE];
 
 #endif
