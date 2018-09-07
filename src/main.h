@@ -10,7 +10,14 @@
 
 #include "factorial.h"
 
-extern int tableInt[TABLE_SIZE];
-extern float table[TABLE_SIZE];
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
 
-#endif
+// add specifics here
+
+#ifdef __cplusplus
+}
+#endif // __cplusplus
+
+#endif // MAIN_H

@@ -7,6 +7,9 @@
 
 #include "factorial.h"
 
+#define TABLE_SIZE 50
+
+// tables to store pre-computed values
 int tableInt[TABLE_SIZE];
 float table[TABLE_SIZE];
 

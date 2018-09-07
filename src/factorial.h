@@ -8,12 +8,22 @@
 #ifndef FACTORIAL_H
 #define FACTORIAL_H
 
-#define TABLE_SIZE 50
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
 
-extern int tableInt[TABLE_SIZE];
-extern float table[TABLE_SIZE];
+/**
+ * Perform factorial on an integer.
+ */
+int factorialInt(int num);
 
-int factorialInt(int);
-float factorialF(float);
+/**
+ * Perform factorial on a float.
+ */
+float factorialF(float num);
 
-#endif
+#ifdef __cplusplus
+}
+#endif // __cplusplus
+
+#endif // FACTORIAL_H

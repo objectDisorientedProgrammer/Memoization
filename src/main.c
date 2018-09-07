@@ -17,7 +17,6 @@ int main(int argc, char* argv[])
     int result = 0;
     int repetitions;
     int cmdLine = 0;
-    memset(tableInt, 0, TABLE_SIZE);
 
     // TODO create menu for user to choose from
     // can pick integer or floating point computations
