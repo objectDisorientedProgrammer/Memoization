@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-std=c99
-INPATH=src/
-APPNAME=app
+INPATH=factorial/
+APPNAME=fact
 
 all: main
 
