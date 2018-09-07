@@ -15,7 +15,7 @@ main: fct ${INPATH}main.c
 clean:
 	rm ${APPNAME} ${INPATH}*.o
 
-test: all
+check: all
 	./${APPNAME}
 
 .PHONY: all
